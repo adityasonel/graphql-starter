@@ -7,6 +7,14 @@ class App {
     constructor() {
         this.apolloServer = new ApolloServer({
             schema: rootSchema,
+            context: ({ req }) => {
+                // Note! We can use the `req` object to access headers,
+                // but the arguments received by `context` vary by integration.
+                //
+                // To find out the correct arguments for a specific integration,
+                // see the `context` option in the API reference for `apollo-server`:
+                // https://www.apollographql.com/docs/apollo-server/api/apollo-server/
+            },
         });
 
         this.expressApp = express();
