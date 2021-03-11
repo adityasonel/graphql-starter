@@ -1,1 +1,1 @@
-# graphql-starters
+# GraphQL Starter Pack 🚀

@@ -1,0 +1,27 @@
+{
+	"name": "mongo-graphql-express-node",
+	"version": "1.0.0",
+	"description": "An awesome starter-pack for graphql with mongo database fuild by apollo-express server",
+	"main": "index.js",
+	"scripts": {
+		"start": "node index.js",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [
+		"Mongo Database",
+		"GraphQl",
+		"Express",
+		"NodeJS",
+		"Starter"
+	],
+	"author": "Aditya Sonel",
+	"license": "ISC",
+	"dependencies": {
+		"apollo-server-express": "^2.21.0",
+		"express": "^4.17.1",
+		"graphql": "^15.5.0",
+		"graphql-tools": "^7.0.4",
+		"lodash": "^4.17.21",
+		"mongodb": "^3.6.4"
+	}
+}
