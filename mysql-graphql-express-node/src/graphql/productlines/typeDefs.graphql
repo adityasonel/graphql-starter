@@ -1,0 +1,9 @@
+extend type Query {
+    productline: productline
+    productlines: [productline]
+}
+type productline {
+    productLine: String!
+    textDescription: String
+    htmlDescription: String
+}

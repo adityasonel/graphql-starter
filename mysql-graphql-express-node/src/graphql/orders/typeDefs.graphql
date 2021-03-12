@@ -1,0 +1,15 @@
+extend type Query {
+    order: order
+    orders: [order]
+}
+type order {
+    orderNumber: Int!
+    orderDate: Date!
+    requiredDate: Date!
+    shippedDate: Date
+    status: String!
+    comments: String
+    customerNumber: Int!
+    customer: customer
+    orderdetail: orderdetail
+}

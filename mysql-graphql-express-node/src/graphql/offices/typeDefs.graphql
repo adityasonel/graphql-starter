@@ -1,0 +1,15 @@
+extend type Query {
+    office: office
+    offices: [office]
+}
+type office {
+    officeCode: String!
+    city: String!
+    phone: String!
+    addressLine1: String
+    addressLine2: String
+    state: String!
+    country: String!
+    postalCode: String!
+    territory: String!
+}

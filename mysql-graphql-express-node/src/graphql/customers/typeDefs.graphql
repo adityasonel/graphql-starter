@@ -1,0 +1,19 @@
+extend type Query {
+    customer(customerNumber: Int!): customer
+    customers: [customer]
+}
+type customer {
+    customerNumber: Int!
+    customerName: String!
+    contactLastName: String!
+    contactFirstName: String!
+    phone: String!
+    addressLine1: String!
+    addressLine2: String
+    city: String!
+    state: String
+    postalCode: String
+    country: String!
+    salesRepEmployeeNumber: Int
+    creditLimit: Float
+}

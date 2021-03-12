@@ -1,0 +1,13 @@
+extend type Query {
+    orderdetail: orderdetail
+    orderdetails: [orderdetail]
+}
+type orderdetail {
+    orderNumber: Int!
+    productCode: String!
+    quantityOrdered: Int!
+    priceEach: Float!
+    orderLineNumber: Int!
+    order: order
+    product: product
+}

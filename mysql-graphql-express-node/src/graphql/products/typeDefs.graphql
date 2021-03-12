@@ -1,0 +1,16 @@
+extend type Query {
+    product: product
+    products: [product]
+}
+type product {
+    productCode: String!
+    productName: String!
+    productLine: String!
+    productScale: String!
+    productVendor: String!
+    productDescription: String!
+    quantityInStock: Int!
+    buyPrice: Float!
+    MSRP: Float!
+    productline: productline
+}

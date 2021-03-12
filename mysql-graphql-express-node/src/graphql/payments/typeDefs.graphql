@@ -1,0 +1,11 @@
+extend type Query {
+    payment: payment
+    payments: [payment]
+}
+type payment {
+    customerNumber: Int!
+    checkNumber: String!
+    paymentDate: Date!
+    amount: Float!
+    customer: customer
+}

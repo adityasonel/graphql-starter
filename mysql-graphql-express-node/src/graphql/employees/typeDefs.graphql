@@ -1,0 +1,15 @@
+extend type Query {
+    employee: employee
+    employees: [employee]
+}
+type employee {
+    employeeNumber: String!
+    lastName: String!
+    firstName: String!
+    extension: String!
+    email: String!
+    officeCode: String!
+    reportsTo: Int
+    jobTitle: String!
+    office: office
+}
